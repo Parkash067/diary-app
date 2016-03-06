@@ -17,7 +17,7 @@ app.use(session({
     },
     secret: '123456789'
 }));
-mongoose.connect('mongodb://localhost/DailyNotes'); //Mongodb Connection of database 'Users'.
+mongoose.connect('mongodb://test:test@ds013908.mlab.com:13908/blog'); //Mongodb Connection of database 'Users'.
 var Userschema = new mongoose.Schema({
     name: { type: String, unique: true },
     pw: { type: Number }
